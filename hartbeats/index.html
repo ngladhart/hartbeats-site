@@ -1,0 +1,73 @@
+<!-- Nate Gladhart, NAT2036357, 05/10/2025 -->
+  
+<!-- 
+  Description: Home page for Hartbeats Music Studio final project.
+  Introduces the studio, hero CTA, and navigation.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hartbeats Music Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body data-page="index">
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container">
+      <!-- Site logo -->
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo.svg" alt="Hartbeats logo" width="110" />
+      </a>
+
+      <!-- Site Navigation -->
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="mainNav">
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page content -->
+  <main class="container">
+    <!-- Hero image & CTA -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Learn why our method BEATS the competition!</h1>
+        <a class="cta btn" href="contact.html">Book a Free Trial Lesson</a>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="card intro">
+      <h2 style="font-size: xx-large;">Welcome to Hartbeats!</h2>
+
+      <blockquote class="big-quote">
+        “I’m a classically‑trained pianist who values traditional music theory, but classical
+        training alone <strong>takes too long</strong>. Hartbeats pairs accessible tech with
+        30‑second lessons so you see progress <strong>fast</strong>!”
+        <footer>— <em>Nate Gladhart</em></footer>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Hartbeats Music Studio · Phoenix, AZ</p>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

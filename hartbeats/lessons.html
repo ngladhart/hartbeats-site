@@ -1,0 +1,104 @@
+<!-- Nate Gladhart, NAT2036357, 05/10/2025 -->
+
+<!-- 
+  Description: Lessons page
+  Contains lesson details, pricing and practice timer. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hartbeats Music Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body data-page="lessons">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo.svg" alt="Hartbeats logo" width="110" />
+      </a>
+
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="mainNav">
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Lesson Packages</h1><br>
+        <p>
+        Whether you’re brand‑new to the keys or polishing your recital pieces, we have a
+        package that fits your goals and schedule. Built for the <strong>TikTok‑minded</strong>
+        generation: quick, engaging, and immediately useful. I’m confident you can find
+        half a minute today to start your piano journey!
+        </p><br>
+
+        <p>
+          Each 30‑second video lesson comes with a daily exercise: a single measure
+          of unique rhythms and intervals you’ll practise with different fingers.
+          Think of it as weight‑training for your hands and ears.
+        </p>
+
+            <br>
+      <details>
+        <summary>What will I learn in Hartbeats?</summary>
+          <img src="assets/img/music.png" alt="Music graph" width="200" />
+          <img src="assets/img/intervals.png" alt="Intervals" width="200" />
+      </details>
+    </section>
+
+    <!-- Pricing table card -->
+    <section class="card">
+      <h2>Pricing</h2>
+
+      <table class="price-table">
+        <thead>
+          <tr><th>Package</th><th>Length</th><th>Rate</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Starter (Ages 5‑10)</td><td>30 min</td><td>$25</td></tr>
+          <tr><td>Standard</td><td>30 min</td><td>$35</td></tr>
+          <tr><td>Premium</td><td>60 min</td><td>$50</td></tr>
+        </tbody>
+      </table>
+
+      <p class="smallprint" style="text-align: right; color: gray;">
+        Family discounts available.*
+      </p>
+    </section>
+
+    <!-- Practice‑time tracker card -->
+    <section class="card tracker">
+      <h2>Practice‑Time Tracker</h2>
+
+      <div class="display"><span id="timer">00 : 00 : 00</span></div>
+
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="resetBtn" disabled>Reset</button>
+      </div>
+
+      <canvas id="weeklyChart" width="500" height="160" aria-label="Weekly practice chart"></canvas>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Hartbeats Music Studio · Phoenix, AZ</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/practice-tracker.js"></script>
+</body>
+</html>

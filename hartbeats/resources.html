@@ -1,0 +1,79 @@
+<!-- Nate Gladhart, NAT2036357, 05/10/2025 -->
+
+<!-- 
+  Description: Resources page
+  Contains metronome & ear-training game.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hartbeats Music Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body data-page="resources">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo.svg" alt="Hartbeats logo" width="110" />
+      </a>
+
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="mainNav">
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Metronome Widget -->
+    <section class="card metronome">
+      <h2>Metronome</h2>
+
+      <label class="bpm-label">
+        BPM:&nbsp;<strong id="bpmVal">120</strong><br>
+        <input id="bpmSlider" type="range" min="40" max="240" value="120">
+      </label>
+
+      <div class="metro-buttons">
+        <button id="metroStart">Start</button>
+        <button id="metroStop"  disabled>Stop</button>
+      </div>
+    </section>
+
+    <!-- Interval Trainer -->
+    <section class="card trainer">
+      <h2>Ear‑Training Game</h2>
+
+      <p id="trainerPrompt">Press Play to hear an interval.</p>
+
+      <div class="trainer-controls">
+        <button id="playInterval">Play</button>
+        <button id="nextRound" disabled>Next</button>
+      </div>
+
+      <!-- buttons injected by JS -->
+      <div id="choices" class="choice-buttons"></div>
+
+      <p id="scoreDisplay">Score: 0/0</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Hartbeats Music Studio · Phoenix, AZ</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/metronome.js"></script>
+  <script src="js/ear-trainer.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!-- Nate Gladhart, NAT2036357, 05/10/2025 -->
+
+<!-- 
+  Description: Contact page
+  Contains coupon form and contact info.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hartbeats Music Studio | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo.svg" alt="Hartbeats logo" width="110" />
+      </a>
+
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="mainNav">
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h1>Book Your Free Trial Lesson</h1>
+      <p>Fill out the form and we’ll be in touch within 24 hours.</p>
+    </section>
+
+    <!-- Form -->
+    <section id="contactSection" class="card contact-form">
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+          <small class="error" data-for="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" data-for="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="555‑123‑4567" />
+          <small class="error" data-for="phone"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <small class="error" data-for="message"></small>
+        </div>
+
+        <button id="submitBtn" class="btn" type="submit">Send &amp; Get Coupon</button>
+      </form>
+    </section>
+
+    <!-- Optional contact info -->
+    <p class="smallprint" style="text-align:center">
+      Prefer email? 
+      <a href="mailto:nategladhart@hartbeats.life">nategladhart@hartbeats.life</a>
+    </p>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Hartbeats Music Studio · Phoenix, AZ</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>
